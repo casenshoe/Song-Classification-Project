@@ -10,7 +10,7 @@
     <meta name="author" content="" />
     <title>Song Belong</title>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./static/css/styles.css" rel="stylesheet" />
+    <link href="../static/css/styles.css" rel="stylesheet" />
     <style>
       .todo {
         color: red;
@@ -121,7 +121,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="800"
               title="Correlation Matrix"
-              src="./static/Charts/cor_mat.html"
+              src="../static/Charts/cor_mat.html"
             ></iframe>
             <h3>Pairplots</h3>
             <p class="lead">
@@ -133,7 +133,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
             <iframe
               width="1050"
               height="1050"
-              src="./static/Charts/Scatter_Matrix.html"
+              src="../static/Charts/Scatter_Matrix.html"
             ></iframe>
             <h3>Scatterplot Between Loudness, Energy, and Acousticness</h3>
             <p class="lead">
@@ -144,7 +144,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
             <iframe
               width="800"
               height="650"
-              src="./static/Charts/RelationshipBetweenLoudnessEnergyAcousticness.html"
+              src="../static/Charts/RelationshipBetweenLoudnessEnergyAcousticness.html"
             >
             </iframe>
             <h3>Scatterplot Between Energy, Time Signature, and Loudness</h3>
@@ -158,7 +158,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
             <iframe
               width="800"
               height="650"
-              src="./static/Charts/RelationshipBetweenEnergyTimeSignatureLoudness.html"
+              src="../static/Charts/RelationshipBetweenEnergyTimeSignatureLoudness.html"
             >
             </iframe>
             <h3>
@@ -175,7 +175,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
             <iframe
               width="800"
               height="650"
-              src="./static/Charts/RelationshipBetweenValenceDanceability,Intrumentalness.html"
+              src="../static/Charts/RelationshipBetweenValenceDanceability,Intrumentalness.html"
             >
             </iframe>
             <h3>Song Attributes and Positivity</h3>
@@ -193,7 +193,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Effects of Loudness and Acousticness on Overall Positivity"
-              src="./static/Charts/LOUDvsVALvsACOUSTICNESS.html"
+              src="../static/Charts/LOUDvsVALvsACOUSTICNESS.html"
             ></iframe>
             <h3>Dancebility vs Energy</h3>
             <p class="lead">
@@ -208,7 +208,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Correlation Matrix"
-              src="./static/Charts/dance__vs_energy_tempo.html"
+              src="../static/Charts/dance__vs_energy_tempo.html"
             ></iframe>
             <h3>Distribution of Loudness</h3>
             <p class="lead">
@@ -222,7 +222,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Distribution of Loudness"
-              src="./static/Charts/LoudnessDistribution.html"
+              src="../static/Charts/LoudnessDistribution.html"
             ></iframe>
             <h3>Three-Way-Boxplot</h3>
             <p class="lead">
@@ -234,7 +234,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Three Way Boxplot"
-              src="./static/Charts/ThreeWayBoxplot.html"
+              src="../static/Charts/ThreeWayBoxplot.html"
             ></iframe>
             <h3>Violin Plot Between Time_Signature and Loudness</h3>
             <p class="lead">
@@ -247,7 +247,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="700"
               title="Violin Plot Between Time_Signature and Loudness"
-              src="./static/Charts/ViolinPlot1.html"
+              src="../static/Charts/ViolinPlot1.html"
             ></iframe>
             <h3>Two-Way-Boxplot</h3>
             <p class="lead">
@@ -258,7 +258,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Boxplot Between Key and Acousticness"
-              src="./static/Charts/TwoWayBoxplot.html"
+              src="../static/Charts/TwoWayBoxplot.html"
             ></iframe>
             <h3>Violin Plot Between Time_Signature and Danceability</h3>
             <p class="lead">
@@ -270,7 +270,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               width="800"
               height="650"
               title="Violin Plot Between Time_Signature and Danceability"
-              src="./static/Charts/ViolinPlot2.html"
+              src="../static/Charts/ViolinPlot2.html"
             ></iframe>
           </div>
         </div>
@@ -294,7 +294,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               module from the SKLearn library. However, we found this to be too
               slow, and switched to the more optimized LinearSVC module.
             </p>
-            <img src="./static/images/svm.png" alt="Support Vector Machine" style="height:400;">
+            <img src="../static/images/svm.png" alt="Support Vector Machine" style="height:400;">
 
             <h3>Random Forest</h3>
             <p class="lead">
@@ -315,7 +315,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
 
               When running our random forest model, a few hyper-parameters were taken into account, such as the number of decision trees and the maximum depth of each tree. We found that with a higher number of trees we would get much higher accuracy at the cost of computing power. Other arguments were given that specified the minimum number of decisions at each branch and tree, as well as the maximum depth of a tree. We found that these parameters had very little effect on performance, though, and decided they weren’t worth the computational power. Our best accuracy, achieved through a high number of trees and a moderate depth, sat at around 59%, the highest accuracy of any ML model used. This accuracy, however, wasn't absolute as decision trees and, by extension, random forests are highly sensitive to any change in data, and accuracy measures would sometimes drop, although it would only typically ever drop by 1%>. While being less than ideal, it wasn't fatal.
             </p>
-            <img src="./static/images/decision-tree-nodes.png" alt="A decision tree" style="height:400;">
+            <img src="../static/images/decision-tree-nodes.png" alt="A decision tree" style="height:400;">
 
             <h3>Neural Nets</h3>
             <p class="lead">
@@ -328,7 +328,7 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
               to test multiple possibilities for hidden layers or alpha values
               and determine which combination worked best with the data.
             </p>
-            <img src="./static/images/nn.png" alt="A decision tree" style="height:400;">
+            <img src="../static/images/nn.png" alt="A decision tree" style="height:400;">
             <!--  <img src="Neural Network Picture.jpeg" alt="A neural network" style="width:700px;height:500px;">  -->
 
             <h3>Results</h3>
@@ -343,16 +343,16 @@ One of our datasets, collected from Kaggle, had 12.8 million songs and their cor
             <iframe
               width="800"
               height="400"
-              src="./static/Charts/ml_results.html"
+              src="../static/Charts/ml_results.html"
             ></iframe>
             <p class="lead">
               Unfortunately, our models were unable to achieve high accuracy with our dataset. This is most likely due to the complex and subjective nature of music. In addition, our playlist dataset was automatically scraped from Spotify, which could have resulted in the inclusion of strange or inconsistent playlists.<br><br>
               To more deeply explore the results from each model, confusion matrices were generated.
             </p>
             <div class="row gx-5 justify-content-center">
-              <img src="./static/images/conf_mat_svm.png" alt="A decision tree" style="width:260;">
-              <img src="./static/images/conf_mat_rf.png" alt="A decision tree" style="width:260;">
-              <img src="./static/images/conf_mat_nn.png" alt="A decision tree" style="width:260;">
+              <img src="../static/images/conf_mat_svm.png" alt="A decision tree" style="width:260;">
+              <img src="../static/images/conf_mat_rf.png" alt="A decision tree" style="width:260;">
+              <img src="../static/images/conf_mat_nn.png" alt="A decision tree" style="width:260;">
             </div>
             <p class="lead">
               The confusion matrix for SVM shows that negative gets predicted a larger number of times compared to positive. This indicates that there is both a high percentage of true negative and false negative values compared to true positive and false positive. However, compared to the confusion matrices of the other two models, this model has the most even spread across all values<br><br>
